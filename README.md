@@ -47,6 +47,14 @@ Bij het uitvoeren van de onderstaande command, wordt de app opgestart.
 nodemon
 ```
 
+## Overige command
+
+Browserify
+```
+npm run build
+
+```
+
 ## Object model
 
 
