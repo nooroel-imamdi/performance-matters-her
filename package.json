@@ -1,0 +1,27 @@
+{
+  "name": "rijksmuseum",
+  "version": "1.0.0",
+  "description": "rijksmuseum web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "expose": "ngrok http 3004",
+    "build": "./node_modules/.bin/browserify ./clientside/*.js -o ./public/assets/js/build.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express-https-redirect": "^1.0.0",
+    "ngrok": "^2.2.6",
+    "request": "*",
+    "path": "*"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "nodemon": "*"
+  },
+  "author": "Nooroel Imamdi",
+  "license": "ISC"
+}
