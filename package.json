@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "expose": "ngrok http 3004",
-    "build": "./node_modules/.bin/browserify ./clientside/*.js -o ./public/assets/js/build.js"
+    "build": "./node_modules/.bin/browserify ./client/*.js -o ./public/assets/js/build.js"
   },
   "dependencies": {
     "express": "*",
