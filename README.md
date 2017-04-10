@@ -1,9 +1,9 @@
-# Performance matters | Herkansing
+# Performance matters - Herkansing
 
 Nooroel Imamdi | 500706701
 
 ## Algemeen
-Deze repository bevat de eindopdracht voor het vak 'Performance matters', onderdeel van de minor 'Webdevelopment' aan de 'Hogeschool van Amsterdam'.
+Deze repository bevat de eindopdracht voor het vak *Performance matters*, onderdeel van de minor *Webdevelopment* aan de *Hogeschool van Amsterdam'*
 
 ## Installatie
 
@@ -52,6 +52,7 @@ nodemon
 
 ## Flowchart
 
+## Features
 
 ## Optimalisatie
 
