@@ -17,9 +17,22 @@ cd performance-matters-her
 
 
 #### dependencies
+```
+"express": "*",
+"body-parser": "*",
+"dotenv": "^4.0.0",
+"ejs": "^2.5.6",
+"express-https-redirect": "^1.0.0",
+"ngrok": "^2.2.6",
+"request": "*",
+"path": "*"
+```
 
 #### devDependencies
-
+```
+"browserify": "^14.1.0",
+"nodemon": "*"
+```
 
 
 ### Installeer de 'dependencies'
