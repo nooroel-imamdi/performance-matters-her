@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, './public')));
 
 // Routing
 app.get('/', function (req, res) {
-  request(apiUrl + '?q=' + userInput + apiKey + '&format=json', function (error, response, body) {
+  request(apiUrl + '?q=' + '"vermeer"' + '&key=' + apiKey + '&format=json', function (error, response, body) {
     var data = JSON.parse(body)
     res.render('index.ejs', {paintings: data})
   });
@@ -45,6 +45,6 @@ app.get('/painting/:objectNumber', function (req, res, objectNumber) {
   });
 })
 
-var server = app.listen(3004,function(){
-	console.log('Server Started on Port 3004');
+var server = app.listen(3000,function(){
+	console.log('Server Started on Port 3000');
 });
