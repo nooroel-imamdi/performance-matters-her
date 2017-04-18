@@ -52,7 +52,9 @@ section{
 }
 @media only screen and (max-width: 40em) {
   section{
+    width: 90%;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 article{
@@ -63,11 +65,22 @@ article{
   border: 1px solid #f5f5f5;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 40em) {
+  article{
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  article{
+    width: 45%;
+  }
+}
 article h1{
   font-family: 'merriweather-bold';
 }
 article a,
-article a:visited,{
+article a:visited{
   color: #333;
   text-decoration: none;
 }
