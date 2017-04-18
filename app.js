@@ -31,9 +31,16 @@ app.use(express.static(path.join(__dirname, './public')));
 
 // Routing
 app.get('/', function (req, res) {
-  request(apiUrl + '?q=' + '"vermeer"' + '&key=' + apiKey + '&format=json', function (error, response, body) {
+  request(apiUrl + '?q=&key=' + apiKey + '&format=json', function (error, response, body) {
     var data = JSON.parse(body)
     res.render('index.ejs', {paintings: data})
+  });
+})
+
+app.get('/:principalOrFirstMaker', function (req, res) {
+  request(apiUrl + '?q=' + req.params.principalOrFirstMaker + '&key=' + apiKey + '&format=json', function (error, response, body) {
+    var data = JSON.parse(body)
+    res.render('results.ejs', {paintings: data})
   });
 })
 

@@ -1,0 +1,17 @@
+<% include partials/head.ejs %>
+
+<section>
+
+<% for(var i = 0; i < paintings.artObjects.length; i++) {%>
+
+<article>
+  <img src="<%= paintings.artObjects[i].webImage.url %>" alt="" />
+  <h1><a href="<%= paintings.artObjects[i].objectNumber %>" title="<%= paintings.artObjects[i].title %>"><%= paintings.artObjects[i].title %></a></h1>
+  <p><%= paintings.artObjects[i].principalOrFirstMaker %></p>
+</article>
+
+<% } %>
+
+</section>
+
+<% include partials/footer.ejs %>

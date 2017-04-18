@@ -1,13 +1,16 @@
 <% include partials/head.ejs %>
 
+<section>
+
 <% for(var i = 0; i < paintings.artObjects.length; i++) {%>
 
-<artcile>
-  <img src="<%= paintings.artObjects[i].webImage.url %>" alt="" />
+<article>
   <h1><%= paintings.artObjects[i].principalOrFirstMaker %></h1>
   <p></p>
-</artcile>
+</article>
 
 <% } %>
+
+</section>
 
 <% include partials/footer.ejs %>
