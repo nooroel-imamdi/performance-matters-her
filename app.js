@@ -1,4 +1,4 @@
-// Modules
+// Packages
 var express = require('express');
 var request = require('request');
 var bodyParser = require('body-parser');
@@ -40,15 +40,19 @@ app.get('/', function (req, res) {
 app.get('/:principalOrFirstMaker', function (req, res, principalOrFirstMaker) {
   request(apiUrl + '?q=' + req.params.principalOrFirstMaker + '&key=' + apiKey + '&format=json', function (error, response, body) {
     var data = JSON.parse(body)
-    res.render('results.ejs', {paintings: data})
+    res.render('results.ejs', {paintings: data});
   });
 })
 
 app.get('/painting/:objectNumber', function (req, res, objectNumber) {
   request(apiUrl + '/' + req.params.objectNumber + '?&key=' + apiKey + '&format=json', function (error, response, body) {
     var data = JSON.parse(body)
-    res.render('detail.ejs', {paint: data})
+    res.render('detail.ejs', {paint: data});
   });
+})
+
+app.get('/offline', function (req, res) {
+  res.render('offline.ejs');
 })
 
 var server = app.listen(3000,function(){

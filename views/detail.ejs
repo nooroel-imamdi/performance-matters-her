@@ -1,12 +1,23 @@
 <% include partials/head.ejs %>
 
-<section>
+<section class="paint-detail">
 
-  <article>
-    <img src="" alt="" />
+  <article class="paint">
+    <img src="<%= paint.artObject.webImage.url %>" alt="" />
     <h1><%= paint.artObject.title %></h1>
-    <p></p>
+    <p><%= paint.artObject.plaqueDescriptionDutch %></p>
   </article>
+
+  <aside class="painter">
+    <h2>Over <%= paint.artObject.principalMakers[0].name %></h2>
+    <ul>
+      <li> Naam: <%= paint.artObject.principalMakers[0].name %></li>
+      <li> Geboortedatum: <%= paint.artObject.principalMakers[0].dateOfBirth %></li>
+      <li> Geboorteplaats: <%= paint.artObject.principalMakers[0].placeOfBirth %></li>
+      <li> Overlijdensdatum: <%= paint.artObject.principalMakers[0].dateOfDeath %></li>
+      <li> Overlijdensplaats: <%= paint.artObject.principalMakers[0].placeOfDeath %></li>
+    </ul>
+  </aside>
 
 </section>
 

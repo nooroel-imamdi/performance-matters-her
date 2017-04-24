@@ -20,35 +20,52 @@ html,body{
   padding: 0;
 }
 body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: 'merriweather-light';
+}
+h1{
+  font-family: 'merriweather-bold';
+}
+h2{
+  font-family: 'merriweather-light';
+  font-size: 1.2em;
+}
+p{
+  font-family: 'merriweather-regular';
+  font-size: .9em;
 }
 header{
   background: #fff;
   width: 100%;
   border-top: 3px solid #333;
+  border-bottom: 1px solid rgba(0,0,0,.05);
   text-align: center;
+  margin: 0 0 2em;
 }
 header a.logo{
   background: url(../img/logo_rijksmuseum.svg) no-repeat;
   background-size: 100%;
   width: 12em;
-  height: 4em;
+  height: 1.4em;
   display: inline-block;
   margin: 1.5em 0;
 }
 section.overview{
   width: 80%;
+  margin: 0 auto 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 1em;
+}
+section.paint-detail{
+  width: 80%;
+  margin: 0 auto 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 40em) {
   section{
@@ -65,6 +82,16 @@ article{
   border: 1px solid #f5f5f5;
   box-sizing: border-box;
 }
+article.paint{
+  width: 60%;
+}
+aside.about{
+  width: 40%;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
 @media only screen and (max-width: 40em) {
   article{
     width: 100%;
@@ -75,9 +102,6 @@ article{
   article{
     width: 45%;
   }
-}
-article h1{
-  font-family: 'merriweather-bold';
 }
 article a,
 article a:visited{

@@ -32,7 +32,6 @@ function filterByImageURL(paintings) {
 var newArrayImageUrl = arr.filter(filterByImageURL);
 
 
-
 // var arrByID = arr.filter(filterByID);
 
 // console.log('Gefilterde Array\n', arrByID);

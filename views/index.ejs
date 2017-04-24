@@ -5,7 +5,8 @@
 <% for(var i = 0; i < paintings.artObjects.length; i++) {%>
 
 <article>
-  <h1><%= paintings.artObjects[i].principalOrFirstMaker %></h1>
+  <img src="<%= paintings.artObjects[i].webImage.url %>" alt="" />
+  <h1><a href="/painting/<%= paintings.artObjects[i].objectNumber %>"><%= paintings.artObjects[i].principalOrFirstMaker %></a></h1>
   <p></p>
 </article>
 
