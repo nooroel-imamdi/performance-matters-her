@@ -1,4 +1,4 @@
-# Performance matters - Herkansing
+# Performance matters
 
 Nooroel Imamdi | 500706701
 
